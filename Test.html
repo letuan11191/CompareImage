@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<img id="id1" src="~$imageUrl`" onload="javascript:showImage();">
+</body>
+<script type="text/javascript">
+	var _img = document.getElementById('id1');
+	var newImg = new Image;
+	newImg.onload = function() {
+    _img.src = this.src;
+}
+newImg.src = 'a.jpg';
+</script>
+</html>
